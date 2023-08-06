@@ -1,0 +1,48 @@
+Username	Password
+admin		admin
+user		user
+
+GET 	http://localhost:8080/api/employees
+	http://localhost:8080/api/employees/6
+	http://localhost:8080/api/employees/search/emma
+	http://localhost:8080/api/employees/sort?order=asc
+	http://localhost:8080/api/employees/sort?order=desc
+-----------------------------------------------------
+PUT	http://localhost:8080/api/employees
+
+{
+        "id": 3,
+        "firstName": "Rupert",
+        "lastName": "Ronald Grint",
+        "email": "rupert97@gmail.com"
+}
+----------------------------------------------------
+DELETE http://localhost:8080/api/employees/3
+----------------------------------------------------
+POST http://localhost:8080/api/employees
+
+{
+"firstName":"gl",
+"lastName":"postman",
+"email":"postman@gamil.com"
+}
+----------------------------------------------------
+	http://localhost:8080/api/roles
+
+{
+"name":"EMP"
+}
+----------------------------------------------------
+	http://localhost:8080/api/users
+
+{
+"username":"temp",
+"password":"12345",
+"roles":[{
+"id":2,
+"name":"USER"
+}]
+}
+
+SWAGGER -http://localhost:8080/swagger-ui/index.html
+	
